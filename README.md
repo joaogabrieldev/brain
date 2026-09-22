@@ -9,6 +9,7 @@
 ![PT-BR](https://img.shields.io/badge/Sa%C3%ADda-PT--BR-009C3B?style=for-the-badge)
 
 [![Skills](https://img.shields.io/badge/Skills-5_autorais-6E56CF?style=for-the-badge&logo=anthropic&logoColor=white)](#-skills-disponíveis)
+[![SkillDrop](https://img.shields.io/badge/SkillDrop-.skill_%E2%86%92_.zip-111111?style=for-the-badge&logo=vercel&logoColor=white)](https://projeto-skilldrop.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-joaogabrieldev-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/joaogabrieldev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-joaogabrielrocha-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/joaogabrielrocha)
 
@@ -170,7 +171,7 @@ O projeto segue fundamentos importantes de arquitetura:
 
 ## 🗂️ Estrutura do Projeto
 
-Cada `.skill` é um pacote ZIP autocontido. Descompactado, o conteúdo segue este formato:
+Cada `.skill` é um pacote ZIP autocontido — se preferir abrir sem terminal, converta para `.zip` no [SkillDrop](#-alternativa-sem-terminal--skilldrop). Descompactado, o conteúdo segue este formato:
 
 ```bash
 brain/
@@ -229,6 +230,21 @@ unzip -o appsec-universal.skill -d ~/.claude/skills/
 ```
 
 Para deixar as skills disponíveis só em um projeto específico, troque o destino por `<seu-projeto>/.claude/skills/`. Reinicie o agente e chame a skill pelo gatilho — por exemplo, `audita a segurança desse módulo` ou `/readme-creator`.
+
+### 📦 Alternativa sem terminal — SkillDrop
+
+Não tem `unzip` à mão (ou está no Windows)? Um `.skill` nada mais é que um ZIP com outra extensão, e eu também criei uma ferramenta web para fazer essa conversão:
+
+### 🔗 [projeto-skilldrop.vercel.app](https://projeto-skilldrop.vercel.app)
+
+- **100% client-side** — a conversão roda no próprio navegador com **JSZip**; nenhum byte sai do seu dispositivo, sem backend, upload, login ou analytics;
+- **Arraste e solte** vários `.skill` de uma vez e baixe cada `.zip` convertido;
+- **Validação** por arquivo (extensão `.skill` e limite de 500 MB) e **deduplicação** de nomes no download;
+- **Remove a pasta raiz redundante** quando todo o conteúdo do pacote está sob um único diretório.
+
+Depois de baixar o `.zip`, é só descompactar dentro de `~/.claude/skills/` — o resultado é idêntico ao do `unzip`.
+
+Repositório do projeto: [github.com/joaogabrieldev/projeto-skilldrop](https://github.com/joaogabrieldev/projeto-skilldrop)
 
 ### Scripts úteis
 
