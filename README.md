@@ -39,7 +39,7 @@ Repositório oficial:
 
 > **Todas as skills abaixo foram escritas por mim** (João Gabriel R. Rocha). Não são forks nem cópias de pacotes de terceiros: cada `SKILL.md`, cada arquivo de `references/`, cada template de relatório e cada script de auditoria nasceu aqui, a partir de auditorias e projetos reais.
 
-| Skill | O que faz | Aciona quando você diz |
+| Skill | O que faz |
 |---|---|
 | 🛡️ **[appsec-universal](#️-appsec-universal)** | Auditoria AppSec sênior agnóstica de linguagem, em modo zero-tolerância |
 | 🏗️ **[ci-pipeline-auditor](#️-ci-pipeline-auditor)** | Audita a esteira de GitHub Actions e pluga o SonarQube como quality gate bloqueante |
