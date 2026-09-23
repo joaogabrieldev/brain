@@ -133,6 +133,21 @@ O projeto segue fundamentos importantes de arquitetura:
   <img src="https://skillicons.dev/icons?i=githubactions,github,git,py,bash,md,vscode" alt="Stack principal" />
 </div>
 
+### 📦 Alternativa sem terminal — SkillDrop
+
+Não tem `unzip` à mão (ou está no Windows)? Um `.skill` nada mais é que um ZIP com outra extensão, e eu também criei uma ferramenta web para fazer essa conversão:
+
+### 🔗 [projeto-skilldrop.vercel.app](https://projeto-skilldrop.vercel.app)
+
+- **100% client-side** — a conversão roda no próprio navegador com **JSZip**; nenhum byte sai do seu dispositivo, sem backend, upload, login ou analytics;
+- **Arraste e solte** vários `.skill` de uma vez e baixe cada `.zip` convertido;
+- **Validação** por arquivo (extensão `.skill` e limite de 500 MB) e **deduplicação** de nomes no download;
+- **Remove a pasta raiz redundante** quando todo o conteúdo do pacote está sob um único diretório.
+
+Depois de baixar o `.zip`, é só descompactar dentro de `~/.claude/skills/` — o resultado é idêntico ao do `unzip`.
+
+Repositório do projeto: [github.com/joaogabrieldev/projeto-skilldrop](https://github.com/joaogabrieldev/projeto-skilldrop)
+
 ### 🚀 Stack principal
 
 - **Claude Code / Agent Skills** (formato `SKILL.md` + `references/` + `assets/` + `scripts/`)
@@ -230,21 +245,6 @@ unzip -o appsec-universal.skill -d ~/.claude/skills/
 ```
 
 Para deixar as skills disponíveis só em um projeto específico, troque o destino por `<seu-projeto>/.claude/skills/`. Reinicie o agente e chame a skill pelo gatilho — por exemplo, `audita a segurança desse módulo` ou `/readme-creator`.
-
-### 📦 Alternativa sem terminal — SkillDrop
-
-Não tem `unzip` à mão (ou está no Windows)? Um `.skill` nada mais é que um ZIP com outra extensão, e eu também criei uma ferramenta web para fazer essa conversão:
-
-### 🔗 [projeto-skilldrop.vercel.app](https://projeto-skilldrop.vercel.app)
-
-- **100% client-side** — a conversão roda no próprio navegador com **JSZip**; nenhum byte sai do seu dispositivo, sem backend, upload, login ou analytics;
-- **Arraste e solte** vários `.skill` de uma vez e baixe cada `.zip` convertido;
-- **Validação** por arquivo (extensão `.skill` e limite de 500 MB) e **deduplicação** de nomes no download;
-- **Remove a pasta raiz redundante** quando todo o conteúdo do pacote está sob um único diretório.
-
-Depois de baixar o `.zip`, é só descompactar dentro de `~/.claude/skills/` — o resultado é idêntico ao do `unzip`.
-
-Repositório do projeto: [github.com/joaogabrieldev/projeto-skilldrop](https://github.com/joaogabrieldev/projeto-skilldrop)
 
 ### Scripts úteis
 
