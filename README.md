@@ -40,12 +40,12 @@ Repositório oficial:
 > **Todas as skills abaixo foram escritas por mim** (João Gabriel R. Rocha). Não são forks nem cópias de pacotes de terceiros: cada `SKILL.md`, cada arquivo de `references/`, cada template de relatório e cada script de auditoria nasceu aqui, a partir de auditorias e projetos reais.
 
 | Skill | O que faz | Aciona quando você diz |
-|---|---|---|
-| 🛡️ **[appsec-universal](#️-appsec-universal)** | Auditoria AppSec sênior agnóstica de linguagem, em modo zero-tolerância | "audita a segurança", "isso é seguro?", "está pronto para produção?" |
-| 🏗️ **[ci-pipeline-auditor](#️-ci-pipeline-auditor)** | Audita a esteira de GitHub Actions e pluga o SonarQube como quality gate bloqueante | "audita minha esteira", "implementa SonarQube", "hardening de Actions" |
-| 🔎 **[deep-research](#-deep-research)** | Pesquisa profunda na web com triangulação de fontes e síntese citada | "pesquisa a fundo", "estado da arte de", "faz um levantamento completo" |
-| 📐 **[prd-max-extractor](#-prd-max-extractor)** | Converte um PRD em fundação spec-driven para React/Next.js + TypeScript | "extrai o máximo desse PRD", "transforma esse PRD em código" |
-| 📄 **[readme-creator](#-readme-creator)** | Gera READMEs completos no meu padrão visual (este aqui saiu dela) | "cria o README", "atualiza o README desse projeto" |
+|---|---|
+| 🛡️ **[appsec-universal](#️-appsec-universal)** | Auditoria AppSec sênior agnóstica de linguagem, em modo zero-tolerância |
+| 🏗️ **[ci-pipeline-auditor](#️-ci-pipeline-auditor)** | Audita a esteira de GitHub Actions e pluga o SonarQube como quality gate bloqueante |
+| 🔎 **[deep-research](#-deep-research)** | Pesquisa profunda na web com triangulação de fontes e síntese citada |
+| 📐 **[prd-max-extractor](#-prd-max-extractor)** | Converte um PRD em fundação spec-driven para React/Next.js + TypeScript |
+| 📄 **[readme-creator](#-readme-creator)** | Gera READMEs completos no meu padrão visual (este aqui saiu dela) |
 
 ---
 
